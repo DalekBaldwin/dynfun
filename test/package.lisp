@@ -12,6 +12,5 @@
 (defparameter *system-directory*
   (make-pathname
    :directory 
-   (slot-value
-    (asdf:system-definition-pathname :dynfun)
-    'directory)))
+   (pathname-directory
+    (asdf:system-definition-pathname :dynfun))))
