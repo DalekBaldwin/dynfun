@@ -1,4 +1,4 @@
-(in-package :cl)
+(in-package :cl-user)
 
 (defpackage :dynfun-test
   (:use :cl :dynfun :stefil :lisp-unit)
