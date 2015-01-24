@@ -1,14 +1,14 @@
-(in-package #:cl-user)
+(in-package :cl-user)
 
-(defpackage #:dynfun
-  (:use #:cl #:alexandria)
+(defpackage :dynfun
+  (:use :cl :alexandria)
   (:export #:defdynfun
            #:redefdynfun
            #:call-next-function
            #:dflet
            #:multidflet))
 
-(in-package #:dynfun)
+(in-package :dynfun)
 
 (defparameter *system-directory*
   (make-pathname

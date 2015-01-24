@@ -1,4 +1,4 @@
-(in-package #:dynfun)
+(in-package :dynfun)
 
 (defvar *dynsyms* (make-hash-table :test #'equal))
 
