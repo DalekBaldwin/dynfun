@@ -1,10 +1,10 @@
 ;;;; dynfun.asd
 
-(defpackage :dynfun-system
-  (:use :cl :asdf))
-(in-package :dynfun-system)
+(defpackage #:dynfun-system
+  (:use #:cl #:asdf))
+(in-package #:dynfun-system)
 
-(defsystem :dynfun
+(defsystem #:dynfun
   :name "dynfun"
   :serial t
   :components
@@ -12,14 +12,13 @@
    (:module :src
             :components ((:file "package")
                          (:file "dynfun" :depends-on ("package")))))
-  :depends-on (:alexandria)
-  )
+  :depends-on (#:alexandria))
 
-(defsystem :dynfun-test
+(defsystem #:dynfun-test
   :name "dynfun-test"
   :serial t
   :components
   ((:module :test
             :components ((:file "package")
                          (:file "dynfun-test" :depends-on ("package")))))
-  :depends-on (:dynfun :stefil :lisp-unit))
+  :depends-on (#:dynfun #:stefil #:lisp-unit))

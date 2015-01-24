@@ -1,4 +1,4 @@
-(in-package :dynfun-test)
+(in-package #:dynfun-test)
 
 (in-root-suite)
 
